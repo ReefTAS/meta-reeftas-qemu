@@ -1,0 +1,4 @@
+kconf hardware reeftas-qemu.cfg
+
+kconf hardware reeftas-qemu-user-config.cfg
+include reeftas-qemu-user-patches.scc

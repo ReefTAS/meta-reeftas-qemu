@@ -1,0 +1,5 @@
+# short-description: Create a 'pcbios' direct disk image for reeftas
+# long-description:
+part /boot --source bootimg-pcbios --ondisk sda --label boot --active --align 1024
+include reeftas.wks.inc
+bootloader  --timeout=0  --append="root=/dev/sda2 rw rootwait rootfstype=ext4 console=tty0"

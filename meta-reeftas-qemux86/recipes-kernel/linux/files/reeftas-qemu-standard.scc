@@ -1,0 +1,7 @@
+define KMACHINE reeftas-qemu
+
+define KARCH i386
+
+include ktypes/standard/standard.scc nopatch
+
+include reeftas-qemu.scc
