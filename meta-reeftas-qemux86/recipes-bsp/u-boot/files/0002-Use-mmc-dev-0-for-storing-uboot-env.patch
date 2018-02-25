@@ -1,0 +1,25 @@
+From b10d46563525c79d70e61f27596c7859b63009e1 Mon Sep 17 00:00:00 2001
+From: Surej Joseph <surej.joseph@harman.com>
+Date: Wed, 14 Feb 2018 22:48:58 -0600
+Subject: [PATCH 2/2] Use mmc dev 0 for storing uboot env
+
+---
+ include/configs/qemu-x86.h | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/include/configs/qemu-x86.h b/include/configs/qemu-x86.h
+index 01072f8..930c0ff 100644
+--- a/include/configs/qemu-x86.h
++++ b/include/configs/qemu-x86.h
+@@ -40,6 +40,8 @@
+ 
+ #define CONFIG_SPL_TEXT_BASE		0xfffd0000
+ 
++#define CONFIG_SYS_MMC_ENV_DEV  0
++
+ #define BOOT_DEVICE_SPI			10
+ 
+ #define CONFIG_SPL_BOARD_LOAD_IMAGE
+-- 
+2.7.4
+
