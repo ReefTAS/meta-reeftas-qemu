@@ -5,6 +5,7 @@ PR := "${PR}.1"
 COMPATIBLE_MACHINE_reeftas-qemux86 = "reeftas-qemux86"
 
 KBRANCH_reeftas-qemux86  = "standard/base"
+KBUILD_DEFCONFIG_reeftas-qemux86 = "i386_defconfig"
 
 KERNEL_FEATURES_append_reeftas-qemux86 += " cfg/smp.scc"
 
