@@ -12,6 +12,12 @@ KERNEL_FEATURES_append_reeftas-qemux86 += " cfg/smp.scc"
 SRC_URI += "file://reeftas-qemu-standard.scc \
             file://reeftas-qemu-user-config.cfg \
             file://reeftas-qemu-user-features.scc \
+            file://enable_pci.cfg \
+            file://enable_acpi.cfg \
+            file://enable_largeblkdev.cfg \
+            file://enable_sdhci_mmc.cfg \
+            file://systemd_support.cfg \
+            file://remove_unneeded.cfg \
            "
 
 # replace these SRCREVs with the real commit ids once you've had
