@@ -14,9 +14,7 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 SRC_URI_append = " \
     file://0001-ReefTAS-defconfig-for-loading-kernel-from-mmc.patch \
     file://0002-Use-mmc-dev-0-for-storing-uboot-env.patch \
-	file://0003-Specify-HOSTCC-to-setup.py.patch \
 "
-
 
 inherit distutils-base
 
